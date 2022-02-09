@@ -1,0 +1,15 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    block content
+      h1= title
+      form(action="/new" method="POST")
+      p Who:
+        input(type="text" name="author")
+      p Message:
+        input(type="text" nama="message")
+      input(type="submit")
+    

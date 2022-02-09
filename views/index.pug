@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  a(href="/new") 
+    button.btn.btn-default(type="button", data-dismiss="modal") Add New Message
+  - for (var x = 0; x < messages.length; x++)
+    ul
+      li= messages[x].user
+      p= messages[x].added
+      h2= messages[x].text
+    
+      
+
+  
+ 
+
